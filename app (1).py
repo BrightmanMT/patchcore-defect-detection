@@ -67,7 +67,7 @@ DEVICE = "cpu"  # Streamlit Cloud / local CPU
 # -------------------------------
 @st.cache_resource
 def load_model():
-    checkpoint = torch.load("/content/drive/MyDrive/Colab Notebooks/patchcore_streamlit/patchcore_bottle.pt", map_location=DEVICE, weights_only=False)
+    checkpoint = torch.load("patchcore_bottle.pt", map_location="cpu")
 
     # Instantiate the PatchCoreModel with the correct architecture
     model = PatchCoreModel()
