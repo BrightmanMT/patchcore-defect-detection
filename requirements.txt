@@ -1,8 +1,8 @@
 streamlit==1.19.0
 altair==4.2.2
 
-torch==2.1.0
-torchvision==0.16.0
+torch==2.10.0
+torchvision==0.25.0
 
 opencv-python
 numpy
